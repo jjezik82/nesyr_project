@@ -13,6 +13,9 @@ Products
   padding: 1.5rem;
   box-shadow: $light-shadow;
   transition: $transition;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
   &:hover {
     box-shadow: $dark-shadow;
   }
@@ -25,6 +28,7 @@ Products
   overflow: hidden;
 }
 .product-info {
+  flex-grow: 1;
   text-align: center;
   max-width: 350px;
   max-height: 100px;

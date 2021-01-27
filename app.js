@@ -4,48 +4,30 @@
 const products = [
   {
     id: 1,
-    title: 'mozzarella',
+    title: 'nemozzarella',
     price: 5,
     img: './pictures/item-1.jpg',
     ingredients: './pictures/ing-1.PNG',
-    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque a quam blanditiis cumque qui sapiente?`,
-    info: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
-              reiciendis assumenda dignissimos voluptate natus eos harum
-              officiis non neque sunt. Quasi repudiandae, reprehenderit eos
-              perspiciatis illo esse animi, reiciendis non, ab nostrum adipisci
-              dolores omnis voluptatem quo corrupti voluptas nobis excepturi
-              magni beatae. Nesciunt placeat omnis cum perferendis, magni
-              similique!`,
+    desc: `neutrálna chuť	- na varenie -	párovať s paradajkou`,
+    info: `Naša ľahká, jemne kyselkavá nemozzarellka pozdvihne každé jedlo na vyššiu úroveň. Je skvelá na varenie, pretože sa krásne rozpúšťa. Odporúčame ju postrúhať na pizzu, či cestoviny alebo použiť ako náplň do slaného pečiva. Čerstvá je najlepšia nakrájaná na kocky v šalátoch alebo na tenšie plátky s paradajkou a bazalkou, poliata olivovým olejom ako vegánske caprese.`,
   },
   {
     id: 2,
-    title: 'gouda',
+    title: 'negouda',
     price: 5.5,
     img: './pictures/item-2.jpg',
     ingredients: './pictures/ing-2.PNG',
-    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque a quam blanditiis cumque qui sapiente?`,
-    info: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
-              reiciendis assumenda dignissimos voluptate natus eos harum
-              officiis non neque sunt. Quasi repudiandae, reprehenderit eos
-              perspiciatis illo esse animi, reiciendis non, ab nostrum adipisci
-              dolores omnis voluptatem quo corrupti voluptas nobis excepturi
-              magni beatae. Nesciunt placeat omnis cum perferendis, magni
-              similique!`,
+    desc: `výrazná údená chuť -	jemná textúra -	párovať s jablkom`,
+    info: `Delikátna negouda s údenou príchuťou sa vyníma na sendvičoch s rukolou a jablkovým chutney. Taktiež aj na cestovinový pokrmoch ako napríklad lasagne, primiešaná do bešamelovej omáčky. Varená, pečená či len tak natretá na krekroch je jednou z našich najobľúbenejších príchutí.`,
   },
   {
     id: 3,
-    title: 'brie',
+    title: 'nebrie',
     price: 6,
     img: './pictures/item-3.jpg',
     ingredients: './pictures/ing-3.PNG',
-    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque a quam blanditiis cumque qui sapiente?`,
-    info: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
-              reiciendis assumenda dignissimos voluptate natus eos harum
-              officiis non neque sunt. Quasi repudiandae, reprehenderit eos
-              perspiciatis illo esse animi, reiciendis non, ab nostrum adipisci
-              dolores omnis voluptatem quo corrupti voluptas nobis excepturi
-              magni beatae. Nesciunt placeat omnis cum perferendis, magni
-              similique!`,
+    desc: `lahodná chuť -	krémová textúra - párovať s hroznom`,
+    info: `Náš signature neSYR typu brie si zamiluje naozaj každý. Jeho lahodná a krémová chuť je unikátna a nezameniteľná. Nebrie vzniká dlhým procesom dozrievania v miskách ako syrová zmes, neskôr v syrových formách a následne odpočíva po soľnom kúpeli na vzduchu 3-5 dní, čím si vytvorí chuťový charakter a tenkú kôrku. Uprostred je jemný a roztierateľný. Použitie už necháme na Vašej kreativite.`,
   },
 ];
 
@@ -127,12 +109,12 @@ window.addEventListener('DOMContentLoaded', function () {
             </div>
             <div class="product-info">
               <h4>${item.title}</h4>
-              <h4>${item.price}€</h4>
+              
               <p>
                 ${item.desc}
               </p>
             </div>
-            // <a href="products.html?item_number=${item.id}#products"  class="btn product-btn"
+            <a href="products.html?item_number=${item.id}#products"  class="btn product-btn"
             >zisti viac</a
           >
           </div>`;
