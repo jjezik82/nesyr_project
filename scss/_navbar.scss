@@ -1,0 +1,47 @@
+/*
+=============== 
+Navbar
+===============
+*/
+
+.nav-links-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+.nav-sticky {
+  position: fixed;
+  z-index: 1;
+  box-shadow: $light-shadow;
+}
+// ////////////////////
+// from Med screen
+// //////////////////////
+@media screen and (min-width: 768px) {
+  .nav-links-container {
+    display: block;
+    background-color: #222;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-link {
+    padding-right: 1rem;
+    text-transform: capitalize;
+    color: $clr-secondary;
+    font-size: 1.5rem;
+    letter-spacing: $spacing;
+    transition: $transition;
+    &:hover {
+      color: $clr-primary-1;
+    }
+  }
+}

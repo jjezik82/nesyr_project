@@ -1,0 +1,110 @@
+/*
+=============== 
+Products
+===============
+*/
+
+.single-product-container {
+  width: 100%;
+  max-width: 500px;
+  background: $clr-dark;
+  // border-radius: $radius;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  box-shadow: $light-shadow;
+  transition: $transition;
+  &:hover {
+    box-shadow: $dark-shadow;
+  }
+}
+.product-img-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  // border-radius: $radius;
+  overflow: hidden;
+}
+.product-info {
+  text-align: center;
+  max-width: 350px;
+  max-height: 100px;
+  margin: 2rem auto;
+  color: $clr-secondary;
+  p {
+    color: $clr-secondary;
+  }
+}
+.product-btn {
+  width: 80%;
+  border: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: $radius;
+  background-color: $clr-primary-2;
+  &:hover {
+    background-color: $clr-primary-2;
+    color: $clr-white;
+  }
+}
+// ////////////////////
+// from Medium screen
+// ////////////////////
+@media screen and (min-width: 768px) {
+  .products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .single-product-container {
+    max-width: 45%;
+    margin: 2rem 0;
+  }
+}
+// ///////////////////////
+// from Large screen
+// //////////////////////
+@media screen and (min-width: 992px) {
+  .single-product-container {
+    max-width: 32%;
+  }
+}
+
+// ////////////////////////
+// Product page
+// ///////////////////////
+.product-page-container {
+  text-align: center;
+}
+.product-page-img-container {
+  max-width: 450px;
+
+  object-fit: cover;
+  margin: 0 auto;
+}
+.product-page-info {
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+// ////////////////////
+// from Medium screen
+// ////////////////////
+@media screen and (min-width: 768px) {
+  .product-page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    place-items: center;
+  }
+  .product-page-info {
+    margin-left: 2rem;
+  }
+  .product-page-img-container {
+    overflow: hidden;
+  }
+}

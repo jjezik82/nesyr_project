@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeSyr</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Javascript -->
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <!-- //////////////
+    Sidebar
+    ////////////////// -->
+    <!-- toggle open btn -->
+    <button class="toggle-open" id="toggle-open">
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- end of toggle open btn -->
+
+    <nav class="sidebar">
+      <!-- toggle close btn -->
+      <button class="toggle-close" id="toggle-close">
+        <i class="fas fa-times"></i>
+      </button>
+      <!-- end of toggle close btn -->
+      <!-- sidebar -->
+
+      <div class="sidebar-container">
+        <ul class="sidebar-links">
+          <li><a href="#home" class="sidebar-link">domov</a></li>
+          <li><a href="#about" class="sidebar-link">o nás</a></li>
+          <li><a href="#products" class="sidebar-link">produkty</a></li>
+          <li><a href="#contact" class="sidebar-link">kontakt</a></li>
+        </ul>
+      </div>
+      <!-- end of sidebar -->
+    </nav>
+
+    <!-- //////////////
+    Header
+    ////////////////// -->
+
+    <header class="header" id="home">
+      <!-- header bar -->
+      <div class="header-bar">
+        <img
+          src="./pictures/logo_main_noBG.png"
+          alt="logo"
+          class="header-logo"
+        />
+        <!-- header social icons -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="blank"
+            class="social-icon"
+          >
+            <i class="fab fa-instagram"> </i>
+          </a>
+        </div>
+        <!-- end of header social icons -->
+      </div>
+      <!-- end of header bar -->
+
+      <!-- hero -->
+      <section class="hero">
+        <a href="#products" class="btn hero-btn btn-scroll-to">naše produkty</a>
+        <!-- //////////////
+    Navbar
+    ////////////////// -->
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#home" class="nav-link">domov</a></li>
+              <li><a href="#about" class="nav-link">o nás</a></li>
+              <li><a href="#products" class="nav-link">produkty</a></li>
+              <li><a href="#contact" class="nav-link">kontakt</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <!-- end of hero -->
+    </header>
+
+    <!-- //////////////
+    About
+    ////////////////// -->
+    <section class="about-section" id="about">
+      <div class="section section-center">
+        <!-- section title -->
+        <div class="section-title">
+          <h2>náš príbeh</h2>
+          <div class="section-title-underscore"></div>
+        </div>
+        <!-- end of section title -->
+
+        <!-- about center -->
+
+        <div class="about-center">
+          <div class="about-img-container">
+            <img
+              src="./pictures/about_family.jpg"
+              alt="cheese board"
+              class="about-img"
+            />
+          </div>
+          <div class="about-info-container">
+            <h3>všetko sa to začalo..</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              exercitationem doloremque amet minus odio minima repudiandae
+              dolorem tenetur ipsum voluptates.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              exercitationem doloremque amet minus odio minima repudiandae
+              dolorem tenetur ipsum voluptates.
+            </p>
+            <a href="about.html#about" class="btn about-btn">čítaj viac</a>
+          </div>
+        </div>
+        <!-- end of about center -->
+      </div>
+    </section>
+
+    <!-- //////////////
+    Products
+    ////////////////// -->
+    <section class="products-section" id="products">
+      <div class="section section-center">
+        <!-- section title -->
+        <div class="section-title">
+          <h2>naše produkty</h2>
+          <div class="section-title-underscore"></div>
+        </div>
+        <!-- end of section title -->
+        <!-- products -->
+        <div class="products-container"></div>
+        <!-- end of products -->
+      </div>
+    </section>
+    <!-- //////////////
+    Contact
+    ////////////////// -->
+    <section class="contact-section" id="contact">
+      <div class="section section-center">
+        <!-- section title -->
+        <div class="section-title">
+          <h2>kontakt</h2>
+          <div class="section-title-underscore"></div>
+        </div>
+        <!-- end of section title -->
+        <div class="contact-container">
+          <!-- single contact -->
+          <h4><i class="fas fa-phone"></i> telefón</h4>
+          <p>0123456789</p>
+          <!-- end of single contact -->
+          <!-- single contact -->
+          <h4><i class="fas fa-envelope"></i> email</h4>
+          <p>0123456789</p>
+          <!-- end of single contact -->
+          <!-- single contact -->
+          <h4><i class="fas fa-location-arrow"></i> adresa</h4>
+          <p>
+            nesyrova 123 <br />
+            96001 <br />
+            nesyrovo
+          </p>
+          <!-- end of single contact -->
+          <!-- contact footer -->
+          <div class="contact-footer">
+            <div class="footer-social-icons">
+              <a
+                href="https://www.facebook.com"
+                target="blank"
+                class="social-icon"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com"
+                target="blank"
+                class="social-icon"
+              >
+                <i class="fab fa-instagram"> </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //////////////
+    Footer
+    ////////////////// -->
+    <footer class="footer section">
+      <h4>&copy;copyright Jozef Jezik all rights reserved</h4>
+    </footer>
+  </body>
+</html>

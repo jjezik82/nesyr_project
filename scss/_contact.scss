@@ -1,0 +1,36 @@
+/*
+=============== 
+Contact
+===============
+*/
+.contact-container {
+  background: $clr-dark;
+  // border-radius: $radius;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: $light-shadow;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 2rem 0;
+  transition: $transition;
+  margin: 0 auto;
+  color: $clr-secondary;
+
+  h4 i {
+    font-size: 1.2rem;
+    color: $clr-primary-1;
+  }
+  h4 {
+    letter-spacing: $spacing;
+  }
+  p {
+    font-weight: 700;
+    color: $clr-secondary;
+  }
+  &:hover {
+    box-shadow: $dark-shadow;
+  }
+}
+.footer-social-icons .social-icon i {
+  color: $clr-primary-1;
+}

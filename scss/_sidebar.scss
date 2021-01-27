@@ -1,0 +1,76 @@
+.toggle-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  z-index: 2;
+  i {
+    color: $clr-primary-1;
+    font-size: 2rem;
+    transition: $transition;
+    &:hover {
+      color: $clr-primary-1;
+      transform: scale(1.25);
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 500px;
+  z-index: 3;
+  background: $clr-secondary;
+  transition: $transition;
+  transform: translateX(-100%);
+}
+.sidebar-open {
+  transform: translateX(0);
+}
+.sidebar-container {
+  text-align: center;
+}
+
+.sidebar-link {
+  display: block;
+  color: $clr-dark;
+  font-size: 2rem;
+  text-transform: capitalize;
+  &:hover {
+    color: $clr-primary-2;
+    background: $clr-white;
+  }
+}
+.toggle-close {
+  background: transparent;
+  border: none;
+  color: darkred;
+  font-size: 2rem;
+  transition: $transition;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// ////////////////////////
+// from Medium screen
+// /////////////////////////
+@media screen and (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .toggle-open {
+    display: none;
+  }
+}
+/* end of nav small */
