@@ -99,14 +99,15 @@ window.addEventListener('DOMContentLoaded', function () {
               class="product-page-img"
             />
           </div>
-
+          <div class="product-page-info-container">
           <div class="product-page-info">
             <h4>${item.title}</h4>
             
             <p>${item.info}</p>
             
-          </div>
-          <a href="index.html#products" class="btn about-btn">naspäť</a>
+            </div>
+            <a href="index.html#products" class="btn about-btn">naspäť</a>
+            </div>
         </div>`;
   });
   displayProduct = displayProduct.join('');

@@ -4,10 +4,17 @@ Footer
 ===============
 */
 .footer {
-  height: 20vh;
+  min-height: 20vh;
+  padding: 2rem;
   background-color: $clr-dark;
+  color: $clr-secondary;
+  display: flex;
+  justify-content: space-around;
+  flex: 0 0 50%;
+  flex-wrap: wrap;
   text-align: center;
-  h4 {
-    color: $clr-secondary;
-  }
+}
+.copy {
+  width: 100%;
+  align-self: flex-end;
 }

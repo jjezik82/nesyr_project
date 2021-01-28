@@ -437,9 +437,14 @@ About
 }
 
 .about-info-container p {
-  max-width: 300px;
+  max-width: 400px;
   margin: 1rem auto;
   text-align: left;
+}
+
+.about-btn-container {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .about-btn {
@@ -459,8 +464,6 @@ About
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
     row-gap: 4rem;
     place-items: center;
   }
@@ -469,10 +472,18 @@ About
     overflow: hidden;
     margin: 0;
   }
-  .about-btn {
+  .info-2 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
+  }
+  .info-2 p {
+    max-width: 80%;
+    font-style: italic;
+  }
+  .info-2 p span {
+    font-weight: bold;
+    font-size: 1.3rem;
   }
   .about-center-info-container {
     max-width: 100%;
@@ -497,18 +508,19 @@ Products
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .single-product-container:hover {
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.single-product-container > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .product-img-container {
@@ -519,12 +531,9 @@ Products
 }
 
 .product-info {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   text-align: center;
   max-width: 350px;
-  max-height: 100px;
+  height: auto;
   margin: 2rem auto;
   color: #efdfd3;
 }
@@ -541,6 +550,8 @@ Products
   margin: 0 auto;
   border-radius: 1rem;
   background-color: #29391d;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .product-btn:hover {
@@ -556,21 +567,24 @@ Products
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .single-product-container {
-    max-width: 45%;
-    margin: 2rem 0;
+    margin-left: 2rem;
+    margin-right: auto;
+    -ms-flex-preferred-size: calc(50% - 2rem);
+        flex-basis: calc(50% - 2rem);
   }
 }
 
 @media screen and (min-width: 992px) {
   .single-product-container {
-    max-width: 32%;
+    -ms-flex-preferred-size: calc(33.33% - 2rem);
+        flex-basis: calc(33.33% - 2rem);
   }
 }
 
@@ -613,59 +627,30 @@ Products
 
 /*
 =============== 
-Contact
-===============
-*/
-.contact-container {
-  background: #222;
-  width: 100%;
-  max-width: 450px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  text-transform: capitalize;
-  padding: 2rem 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  margin: 0 auto;
-  color: #efdfd3;
-}
-
-.contact-container h4 i {
-  font-size: 1.2rem;
-  color: #576c44;
-}
-
-.contact-container h4 {
-  letter-spacing: 0.25rem;
-}
-
-.contact-container p {
-  font-weight: 700;
-  color: #efdfd3;
-}
-
-.contact-container:hover {
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-}
-
-.footer-social-icons .social-icon i {
-  color: #576c44;
-}
-
-/*
-=============== 
 Footer
 ===============
 */
 .footer {
-  height: 20vh;
+  min-height: 20vh;
+  padding: 2rem;
   background-color: #222;
+  color: #efdfd3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
 }
 
-.footer h4 {
-  color: #efdfd3;
+.copy {
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=styles.css.map */
