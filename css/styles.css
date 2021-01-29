@@ -638,8 +638,13 @@ Footer
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
@@ -652,5 +657,35 @@ Footer
   width: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-top: 2rem;
+}
+
+.social-icon i {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #efdfd3;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.social-icon i:hover {
+  color: #576c44;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.contact-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.contact-container h4 {
+  margin-bottom: 0;
+  text-transform: lowercase;
+}
+
+.contact-container h4 i {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=styles.css.map */

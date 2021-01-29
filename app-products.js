@@ -114,3 +114,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
   productContainer.innerHTML = displayProduct;
 });
+
+// /////////////////////
+// Date
+
+const year = new Date();
+const fullYear = year.getFullYear();
+
+date.innerHTML = fullYear;

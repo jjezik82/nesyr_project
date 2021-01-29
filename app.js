@@ -46,7 +46,7 @@ const sidebarContainer = document.querySelector('.sidebar-container');
 const sidebar = document.querySelector('.sidebar');
 const headerBar = document.querySelector('.header-bar');
 const productsContainer = document.querySelector('.products-container');
-
+const date = document.getElementById('date');
 // ////////////////////////////////////
 // smooth scrolling
 
@@ -123,3 +123,11 @@ window.addEventListener('DOMContentLoaded', function () {
   displayProducts = displayProducts.join('');
   productsContainer.innerHTML = displayProducts;
 });
+
+// /////////////////////
+// Date
+
+const year = new Date();
+const fullYear = year.getFullYear();
+
+date.innerHTML = fullYear;

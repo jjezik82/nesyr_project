@@ -42,3 +42,11 @@ const headerLogoObserver = new IntersectionObserver(stickyNav, {
   threshold: 0,
 });
 headerLogoObserver.observe(headerBar);
+
+// /////////////////////
+// Date
+
+const year = new Date();
+const fullYear = year.getFullYear();
+
+date.innerHTML = fullYear;
